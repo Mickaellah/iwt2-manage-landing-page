@@ -82,6 +82,61 @@ input[type="checkbox"],
   color: white;
   background-color: #f25f3a; }
 
+@media (max-width: 600px) {
+  .masthead {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0; }
+  .masthead__container {
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    display: block;
+    padding-block: 0;
+    margin: 16px; }
+  input[type="checkbox"] {
+    display: none; }
+  .masthead__menu {
+    display: block;
+    margin-block-start: 24px; }
+  .masthead__label_menu {
+    cursor: pointer;
+    color: transparent;
+    margin-inline-end: -48px; }
+  .masthead__label_menu::before {
+    content: url("../icons/icon-hamburger.svg"); }
+  .masthead__navigation_container {
+    display: block; }
+  .masthead__navigation {
+    margin-block-start: 64px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -343px;
+    height: 40%;
+    width: 343px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column; }
+  .masthead__list_item {
+    margin-block-start: 16px; }
+  .masthead__list_item:not(:nth-child(1)) {
+    margin-inline-start: 0; }
+  input[type="checkbox"]:checked ~ .masthead__navigation {
+    position: absolute;
+    top: 8px;
+    bottom: 0;
+    left: 0;
+    width: 343px;
+    z-index: 1;
+    background-color: white;
+    text-align: center;
+    transform: translateX(0);
+    margin-inline-start: 24px;
+    border-radius: 5px; }
+  .masthead__bttn {
+    display: none; } }
+
 .better_products {
   max-width: 1110px;
   margin-inline-start: auto;
@@ -104,6 +159,13 @@ input[type="checkbox"],
   border: none;
   color: white;
   background-color: #f25f3a; }
+
+@media (max-width: 600px) {
+  .better_products {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    margin: 16px; } }
 
 .manage {
   max-width: 1110px;
