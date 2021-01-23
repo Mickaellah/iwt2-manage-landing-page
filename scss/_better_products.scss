@@ -1,0 +1,25 @@
+.better_products {
+    max-width: 1110px;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    column-gap: 20px;
+    padding-block: 32px;
+}
+
+.better_products__header {
+    font-size: 56px;
+    line-height: 1.2;
+}
+
+.better_products__button {
+    margin-block-start: 24px;
+    padding-block: 12px;
+    padding-inline: 32px;
+    border-radius: 24px;
+    border: none;
+    color: white;
+    background-color: hsl(12, 88%, 59%);
+}

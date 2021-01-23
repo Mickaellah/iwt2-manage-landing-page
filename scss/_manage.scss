@@ -1,0 +1,36 @@
+.manage {
+    max-width: 1110px;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.manage__header {
+    font-size: 36px;
+}
+
+.manage__title_container {
+    display: flex;
+    flex-direction: row;
+}
+
+.manage__number {
+    margin-block-start: 16px;
+    height: 40px;
+    padding-inline: 24px;
+    border-radius: 24px;
+    color: white;
+    background-color: hsl(12, 88%, 59%);
+    border: none;
+    font-size: 16px;
+}
+
+.manage__title {
+    margin-inline-start: 32px;
+}
+
+.manage__description {
+    margin-inline-start: 96px;
+}
