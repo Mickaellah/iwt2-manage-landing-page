@@ -1,5 +1,19 @@
 body {
     margin: 0;
+    font-family: "Be Vietnam Regular";
+    background-image: url('../images/svg/bg-simplify-section-desktop.svg');
+    background-repeat: no-repeat;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Be Vietnam Bold";
+    color: hsl(228, 39%, 23%);
+    font-weight: 700;
 }
 
 ul {
