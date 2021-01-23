@@ -135,3 +135,52 @@ input[type="checkbox"],
 
 .manage__description {
   margin-inline-start: 96px; }
+
+.avatar {
+  padding-block: 64px; }
+
+.avatar__heading {
+  text-align: center; }
+
+.avatar__header {
+  font-size: 36px;
+  padding-block-end: 48px; }
+
+.avatar__navigation_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 20px;
+  column-gap: 20px;
+  padding: 16px; }
+
+.avatar__list_item {
+  background-color: #fafafa; }
+
+.avatar__owner_container {
+  display: flex;
+  flex-direction: column-reverse;
+  text-align: center; }
+
+.avatar__image {
+  width: 20%;
+  margin-block-start: -8%;
+  margin-inline-start: 40%; }
+
+.avatar__owner_name {
+  margin-block-start: 8%; }
+
+.avatar__description {
+  text-align: center;
+  margin: 0; }
+
+.avatar__button_container {
+  text-align: center; }
+
+.avatar__started_button {
+  margin-block-start: 24px;
+  padding-block: 12px;
+  padding-inline: 32px;
+  border-radius: 24px;
+  border: none;
+  color: white;
+  background-color: #f25f3a; }
