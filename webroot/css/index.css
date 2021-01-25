@@ -241,6 +241,9 @@ input[type="checkbox"],
 .avatar__list_item {
   background-color: #fafafa; }
 
+.avatar__list_item:last-child {
+  display: none; }
+
 .avatar__owner_container {
   display: flex;
   flex-direction: column-reverse;
@@ -268,6 +271,20 @@ input[type="checkbox"],
   border-radius: 24px;
   border: none;
   color: white;
+  background-color: #f25f3a; }
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  border: 1px solid #f25f3a;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease; }
+
+.dot:hover,
+.dot:focus {
   background-color: #f25f3a; }
 
 .team_work {
