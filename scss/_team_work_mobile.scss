@@ -1,0 +1,12 @@
+@media (max-width: 600px) {
+    .team_work {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-block: 80px;
+    }
+
+    .team_work__header {
+        font-size: 56px;
+    }
+}
