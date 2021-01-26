@@ -40,3 +40,7 @@ input[type="checkbox"],
     color: white;
     background-color: hsl(12, 88%, 59%);
 }
+
+.masthead__bttn:hover {
+    box-shadow: 3px 3px 7px hsl(12, 88%, 59%);
+}
