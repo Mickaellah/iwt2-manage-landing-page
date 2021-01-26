@@ -247,10 +247,22 @@ input[type="checkbox"],
 .avatar__list_item {
   background-color: #fafafa; }
 
+.avatar__list_item:nth-child(2) {
+  display: block; }
+
+.avatar__list_item:nth-child(3) {
+  display: block; }
+
+.avatar__list_item:nth-child(4) {
+  display: none; }
+
 .avatar__owner_container {
   display: flex;
   flex-direction: column-reverse;
   text-align: center; }
+
+.avatar_slides {
+  display: none; }
 
 .avatar__image {
   width: 20%;
