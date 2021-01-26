@@ -13,7 +13,7 @@
 
 .avatar__navigation_container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 20px;
     column-gap: 20px;
     padding: 16px;
@@ -23,9 +23,9 @@
     background-color: hsl(0, 0%, 98%);
 }
 
-.avatar__list_item:last-child {
-    display: none;
-}
+// .avatar__list_item:last-child {
+//     display: none;
+// }
 
 .avatar__owner_container {
     display: flex;
@@ -62,18 +62,3 @@
     background-color: hsl(12, 88%, 59%);
 }
 
-.dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    border: 1px solid hsl(12, 88%, 59%);
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-}  
-
-.dot:hover,
-.dot:focus {
-    background-color: hsl(12, 88%, 59%);
-}

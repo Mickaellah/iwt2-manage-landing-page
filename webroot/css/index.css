@@ -233,16 +233,13 @@ input[type="checkbox"],
 
 .avatar__navigation_container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-column-gap: 20px;
   column-gap: 20px;
   padding: 16px; }
 
 .avatar__list_item {
   background-color: #fafafa; }
-
-.avatar__list_item:last-child {
-  display: none; }
 
 .avatar__owner_container {
   display: flex;
@@ -273,19 +270,47 @@ input[type="checkbox"],
   color: white;
   background-color: #f25f3a; }
 
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  border: 1px solid #f25f3a;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease; }
-
-.dot:hover,
-.dot:focus {
-  background-color: #f25f3a; }
+@media (max-width: 600px) {
+  .avatar__navigation_container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    display: block; }
+  .avatar__list_item {
+    vertical-align: middle;
+    display: none; }
+  .avatar_slides {
+    display: flex;
+    justify-content: center; }
+  .avatar_slides:nth-child(1) {
+    border: 1px solid #f25f3a;
+    border-radius: 50%; }
+  .active, .dot:hover {
+    background-color: #f25f3a; }
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    border: 1px solid #f25f3a;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease; }
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s; }
+  @-webkit-keyframes fade {
+    from {
+      opacity: .4; }
+    to {
+      opacity: 1; } }
+  @keyframes fade {
+    from {
+      opacity: .4; }
+    to {
+      opacity: 1; } } }
 
 .team_work {
   padding-block: 64px;

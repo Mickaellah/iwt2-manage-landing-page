@@ -119,7 +119,7 @@
             
             <nav class="avatar__navigation">
                 <ul class="avatar__navigation_container">
-                    <li class="avatar__list_item">
+                    <li class="avatar__list_item fade">
                         <div class="avatar__owner_container">
                             <h3 class="avatar__owner_name">Anisha Li</h3>
                             <img class="avatar__image" src="./images/png/avatar-anisha.png" alt="Anisha's avatar">
@@ -130,7 +130,7 @@
                             </q>
                         </p>
                     </li>
-                    <li class="avatar__list_item">
+                    <li class="avatar__list_item fade">
                         <div class="avatar__owner_container">
                             <h3 class="avatar__owner_name">Ali Bravo</h3>
                             <img class="avatar__image" src="./images/png/avatar-ali.png" alt="Ali's avatar">
@@ -141,7 +141,7 @@
                             </q>
                         </p>
                     </li>
-                    <li class="avatar__list_item">
+                    <li class="avatar__list_item fade">
                         <div class="avatar__owner_container">
                             <h3 class="avatar__owner_name">Richard Watts</h3>
                             <img class="avatar__image" src="./images/png/avatar-richard.png" alt="Richard's avatar">
@@ -167,10 +167,11 @@
                 </ul>
             </nav>
 
-            <div>
-                <span class="dot"></span> 
-                <span class="dot""></span> 
-                <span class="dot"></span> 
+            <div class="avatar_slides">
+                <button type="button" onclick="currentSlides(1)" class="dot"></button> 
+                <button type="button" onclick="currentSlides(2)" class="dot"></button> 
+                <button type="button" onclick="currentSlides(3)" class="dot"></button>
+                <button type="button" onclick="currentSlides(4)" class="dot"></button> 
             </div>
 
             <div class="avatar__button_container">
@@ -254,5 +255,41 @@
             <button class="footer__submit_button" type="submit">Go</button>
         </form>
     </footer>
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlides(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName('avatar__list_item');
+            let dots = document.getElementsByClassName('dot');
+            if (n > slides.length) {
+                slideIndex = 1;
+            }
+
+            if (n < 1) {
+                slideIndex = slides.length;
+            }
+
+            for (i = 0; i < dots.length; i++) {
+                slides[i].style.display = 'none';
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace("active", "");
+            }
+
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += "active";
+        }
+    </script>
 </body>
 </html>

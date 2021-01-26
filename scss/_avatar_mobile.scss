@@ -1,0 +1,61 @@
+@media (max-width: 600px) {
+    .avatar__navigation_container {
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+        display: block;
+    }
+
+    .avatar__list_item {
+        vertical-align: middle;
+        display: none;
+    }
+
+    .avatar_slides {
+        display: flex;
+        justify-content: center;
+    }
+
+    .avatar_slides:nth-child(1) {
+        border: 1px solid hsl(12, 88%, 59%);
+        border-radius: 50%;
+
+    }
+
+    .active, .dot:hover {
+        background-color: hsl(12, 88%, 59%);
+      }
+
+    .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        border: 1px solid hsl(12, 88%, 59%);
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }  
+
+    .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+      }
+      
+      @-webkit-keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+      }
+      
+      @keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+      }
+    
+    // .dot:hover,
+    // .dot:focus {
+    //     background-color: hsl(12, 88%, 59%);
+    // }
+}
