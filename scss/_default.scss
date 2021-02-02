@@ -1,8 +1,9 @@
 body {
     margin: 0;
     font-family: "Be Vietnam Regular";
-    background-image: url('../images/svg/bg-simplify-section-desktop.svg');
+    background-image: url('../images/svg/bg-tablet-pattern.svg');
     background-repeat: no-repeat;
+    background-position: 120% -5%;
     color: hsl(227, 12%, 61%);
     font-size: 18px;
 }
@@ -38,9 +39,8 @@ button {
     cursor: pointer;
 }
 
-@media (min-width: 600px) {
+@media (max-width: 600px) {
     body {
-        background-image: url('../images/svg/bg-simplify-section-mobile.svg');
-        background-repeat: no-repeat;
+        background-position: -30% -12%;
     }
 }
