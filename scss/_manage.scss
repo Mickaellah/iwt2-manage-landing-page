@@ -5,6 +5,10 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    background-image: url('../images/svg/bg-tablet-pattern.svg');
+    background-repeat: no-repeat;
+    background-position: -70% 120vh;
+    padding: 120px;
 }
 
 .manage__header {
