@@ -300,16 +300,6 @@ input[type="checkbox"] {
 .avatar__started_button:hover {
   box-shadow: 3px 3px 7px #f25f3a; }
 
-@media (min-width: 600px) {
-  .fade:nth-child(2),
-  .fade:nth-child(3),
-  .fade:nth-child(4) {
-    display: block; }
-  .fade {
-    -webkit-transition: ease-in-out;
-    transition: ease-in-out;
-    display: block; } }
-
 @media (max-width: 600px) {
   .avatar__navigation_container {
     max-width: 1000px;
