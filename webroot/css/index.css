@@ -200,11 +200,7 @@ input[type="checkbox"] {
   margin-inline-end: auto;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  background-image: url("../images/svg/bg-tablet-pattern.svg");
-  background-repeat: no-repeat;
-  background-position: -70% 120vh;
-  padding: 120px; }
+  justify-content: space-between; }
 
 .manage__header {
   font-size: 36px; }
