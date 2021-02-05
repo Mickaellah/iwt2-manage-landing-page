@@ -12,6 +12,10 @@ input[type="checkbox"] {
     padding-block: 48px;
 }
 
+.masthead__menu {
+    display: none;
+}
+
 .masthead__navigation_container {
     display: flex;
     flex-direction: row;
@@ -42,4 +46,8 @@ input[type="checkbox"] {
 
 .masthead__bttn:hover {
     box-shadow: 3px 3px 7px hsl(12, 88%, 59%);
+}
+
+.close-button {
+    display: none;
 }
