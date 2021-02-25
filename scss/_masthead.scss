@@ -27,6 +27,11 @@ input[type="checkbox"] {
     font-weight: 700;
 }
 
+.masthead__link:focus,
+.masthead__link:hover {
+    color: hsl(227, 12%, 61%);
+}
+
 .masthead__list_item:not(:nth-child(1)) {
     margin-inline-start: 16px;
 }

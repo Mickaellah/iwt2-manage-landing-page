@@ -1,3 +1,77 @@
+.footer__social_media_link {
+    color: transparent;
+}
+
+.footer__social_media_link--facebook {
+    background-image: url('../icons/icon-facebook.svg');
+    background-position: 10% 50%;
+    background-repeat: no-repeat;
+}
+
+.footer__social_media_link--facebook:focus,
+.footer__social_media_link--facebook:hover {
+    background-image: url('../icons/icon-facebook-hover.svg');
+    background-position: 10% 50%;
+    background-repeat: no-repeat;
+}
+
+.footer__social_media_link--youtube {
+    background-image: url('../icons/icon-youtube.svg');
+    background-position: 10% 50%;
+    background-repeat: no-repeat;
+}
+
+.footer__social_media_link--youtube:focus,
+.footer__social_media_link--youtube:hover {
+    background-image: url('../icons/icon-youtube-hover.svg');
+    background-position: 10% 50%;
+    background-repeat: no-repeat;
+}
+
+.footer__social_media_link--twitter {
+    background-image: url('../icons/icon-twitter.svg');
+    background-position: 10% 50%;
+    background-repeat: no-repeat;
+}
+
+.footer__social_media_link--twitter:focus,
+.footer__social_media_link--twitter:hover {
+    background-image: url('../icons/icon-twitter-hover.svg');
+    background-position: 10% 50%;
+    background-repeat: no-repeat;
+}
+
+.footer__social_media_link--pinterest {
+    background-image: url('../icons/icon-pinterest.svg');
+    background-position: 10% 50%;
+    background-repeat: no-repeat;
+}
+
+.footer__social_media_link--pinterest:focus,
+.footer__social_media_link--pinterest:hover {
+    background-image: url('../icons/icon-pinterest-hover.svg');
+    background-position: 10% 50%;
+    background-repeat: no-repeat;
+}
+
+.footer__social_media_link--instagram {
+    background-image: url('../icons/icon-instagram.svg');
+    background-position: 10% 50%;
+    background-repeat: no-repeat;
+}
+
+.footer__social_media_link--instagram:hover,
+.footer__social_media_link--instagram:focus {
+    background-image: url('../icons/icon-instagram-hover.svg');
+    background-position: 10% 50%;
+    background-repeat: no-repeat;
+}
+
+.footer__link:focus,
+.footer__link:hover {
+    color: #f2552c;
+}
+
 @media (max-width: 600px) {
     .footer {
         display: flex;
@@ -28,10 +102,6 @@
 
     .footer__social_media_list_item {
         margin-inline-start: 24px;
-    }
-
-    .footer__social_media_icon {
-        width: 32px;
     }
 
     .footer__social_media_container {
